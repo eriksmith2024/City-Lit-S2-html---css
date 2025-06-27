@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        section {
+            background-color: tan;
+            width: 480px;
+            margin: 0 0 12px 0;
+            padding: 6px;
+            
+        }
+
+        .wrapper {
+            display: flex;
+            width: 480px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Flexible Box Model </h1>
+    
+    <p> When the browser starts to 
+        render a web page it will read through the 
+        html elements and create them in the same 
+        order as they appear in the code.</p>
+
+    <p> This is called the flow and the browser will stack each 
+        element vertically in the same order as the code</p>
+
+    <h2> Default flow</h2>
+
+    <section> First element</section>
+    <section> Second element </section>
+
+    <h2> Flexbox Layout</h2>
+
+    <p> One way of rearranging our boxes is 
+        to put them in to flex box mode which 
+        allows us to flow our boxes in different 
+        ways.</p>
+
+    <p> In order to use flexible box Model we need a 
+        container and at least two child elements</p>
+
+    <div class="wrapper"> 
+        <section>Item One</section>
+        <section>Item Two</section>
+    </div>
+
+    <p> As soon as we change the wrapper / container to 
+        display flex any items within will move into a 
+        horizontal row.</p>
+
+
+
+
+</body>
+</html>

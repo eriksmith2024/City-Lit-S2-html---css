@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+<style>
+    .container {
+        background-color: darkgreen;
+        width: 480px;
+        padding: 6px;
+        display: flex;
+        
+    }
+
+    section {
+        background-color: limegreen;
+    }
+
+    .item {
+        flex-basis: 240px;
+    }
+
+    .col-sm {
+        flex-basis: 100px;
+        background-color: gold;
+    }
+
+    .col-lg {
+        flex-basis:380px
+    }
+
+    .wrapper {
+        width: 960px
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+    <h1> Flexible Box Model </h1>
+
+    <div class="container">
+            <section>Item One </section>
+            <section>Item Two is longer </section>
+
+    </div>
+
+    <p> In normal flow boxes inherit their width 
+        from their container but in flex box model 
+        their default width comes from their 
+        content instead</p>
+
+    <h2> Flex Basis </h2>
+    <p> There are two ways we can control the width 
+        of itenms in flexible box model. We could use 
+        the css width property but there is a better 
+        way in flex box layouts.</p>
+
+        <div class="container"> 
+             <section class="item">Item One is longer but it does not matter </section>
+            <section class="item">Item Two </section>
+        </div>
+    
+    <h3> Uneven widths </h3>
+
+    <div class="container"> 
+        <section class="col-sm">Item One</section>
+        <section class="col-lg">Item Two</section>
+    </div>
+
+    <div class="wrapper"> 
+        <section class="col-sm">Item One</section>
+        <section class="col-lg">Item Two</section>
+        <section class="col-lgr">Item Two</section>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 { background-color:gold;}
+
+        h2 { 
+            background-color: coral;
+            width: 480px; }
+
+        .outside {
+            margin: 80px;
+            border: black dotted 8px;}
+
+        .inside {
+            padding: 50px;}
+
+        .between {
+            border-style: solid;
+            border-width: 12px;
+            border-color: limegreen
+        }
+
+        .yx {
+            border-style: solid;
+            border-width: 30px 4px;
+            border-color: turquoise;
+        }
+        .all-diff {
+            padding: 50px;
+            border-style: solid dashed;
+            border-width: 3px 3px 3px 3px;
+            border-color: turquoise;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Box Model Revision</h1>
+    <p>The box model helps us to understand how the broswer renders the HTML elements</p>
+
+    <p> All elements can be considered to be boxes. They all have default CSS values. </p>
+
+    <h2> Width </h2>
+    <p> As soon as we specify the width of the element the default is overridden</p>
+
+    <h2 class="outside"> Margin</h2>
+    <p> Margins are the space around the outside of the box </p>
+
+    <h2 class="inside"> Padding </h2>
+    <p> Padding is space applied inside the box </p>
+
+    <h2 class="between"> Border</h2>
+    <p> Borders are applied between the margin and padding</p>
+
+    <h2 class="yx"> Two Values </h2>
+    <p> Two values for padding, margin or border will apply to the top and bottom and the second to the left or right</p>
+
+    <h2 class="all-diff"> Four Values</h2>
+    <p> </p>
+
+</body>
+</html>
