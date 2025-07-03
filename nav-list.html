@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+nav {
+    width: 150px; 
+}
+
+.menu-one ul {
+    padding:0;
+    margin:0;
+     display: flex;
+}
+
+.menu-one li {
+    list-style-type: none;
+    border-bottom: solid 1px darkslategray;
+    padding: 3px 0 3px 0;
+}
+
+.menu-one a {
+    color: darkslategray;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* example two */
+.menu-two ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-two li {
+    list-style-type: none;
+}
+
+.menu-two a {
+    color: cornsilk;
+    background-color: darkslategray;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display:block;
+    padding:3px;
+    margin: 0 0 2px 0;
+}
+
+.menu-two a:hover {
+    background-color: dodgerblue;
+}
+
+</style>
+    
+</head>
+<body>
+
+    <h1> Using Lists to make Nav Bars </h1>
+
+    <p> This is a common technique used in many websites. 
+        It makes sense to use a list because a navigation 
+        menu is essentially a list of links</p>
+
+    <h2>Example One</h2>
+     
+   <nav class="menu-one">
+        <ul>
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two </a></li>
+            <li><a href="#">Link Three </a></li>
+        </ul>
+    </nav> 
+
+      <h2>Example Two</h2>
+     
+   <nav class="menu-two">
+        <ul>
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two </a></li>
+            <li><a href="#">Link Three </a></li>
+        </ul>
+    </nav> 
+
+    
+
+    
+</body>
+</html>

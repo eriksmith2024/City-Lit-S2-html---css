@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixing Selectors</title>
+
+    <style>
+
+        h1, h2, h3, h4, h5, h6 {color: gold;}
+
+        p {color: dodgerblue}
+
+        div h3 {color: orange;}
+
+        div p { color: seagreen}
+
+        .offer h2 {color: lavender}
+
+
+    </style>
+</head>
+<body>
+
+    <h1> Mixing Selectors in CSS</h1>
+
+    <p>There are many different ways we can mix two or more selectors in CSS.</p>
+
+    <P> Somtimes we ant to make a selector more efficient and other times we want to 
+        make one more specific or conditional</P>
+
+    <h2> Types of Mixed Selector</h2>
+
+    <h3> Combined Selector</h3>
+
+    <p> The combined selector is a comma seperated list of selectors which we can 
+        use to make our css more efficient</p>
+
+    <h3>Descendant Selector</h3>
+
+    <p>Descend selectors are used to target child, grandchild or other elements that 
+        are descended from a parent</p>
+    
+    <div>
+        <h3>Child Element</h3>
+        <p>Child Paragraph</p>
+    </div>
+
+    <p> Descenedant selectors are good for setting conditional styles</p>
+
+    <section class="offer"> 
+        <h2>On Sale</h2>
+
+        <p>Buy Now! Dont Miss Out!</p>
+    </section>
+
+      <section> 
+        <h2>Full Price</h2>
+
+        <p>Buy Now! Dont Miss Out!</p>
+    </section>
+
+
+</body>
+</html>
