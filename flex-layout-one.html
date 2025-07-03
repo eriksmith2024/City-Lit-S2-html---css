@@ -6,28 +6,55 @@
     <title>Flex Layout one</title>
     <style>
 
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border: solid 2px red;
+
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        section {
+            background-color: tan;
+            padding: 6px;
+            margin: 0 4px 12px 4px;
+            flex-basis: 400px;
+        }
+
+        footer {
+            background-color: orange;
+            padding: 8px;
+            margin: 0 4px;
+            
+        }
+
     </style>
 </head>
+
+
 <body>
 
     <div class="container">
-        <section>
-            <h2>First Section</h2>
-        </section>
+        <div class="wrapper">
+                <section>
+                    <h2>First Section</h2>
+                </section>
 
-        <section>
-            <h2>Second Section</h2>
-        </section>
+                <section>
+                    <h2>Second Section</h2>
+                </section>
+        </div>
 
-        <footer>
-
-        </footer>
-        
-
-
-
-
+            <footer>
+                <p>I'm a footer</p>
+            </footer>
+      
     </div>
+   
 
     
 </body>
