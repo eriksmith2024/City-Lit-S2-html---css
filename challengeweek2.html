@@ -17,17 +17,40 @@
     main {
         background-color: teal ;
         color: beige;
-        width: 60vw;
+        width: 40vw;
         margin: auto;
-    
+        padding: 1% 5%;
+        border-radius: 15px;
     }
 
-    .container {
-        background: black;
-        border: 4px solid beige;
-        margin: 15% 10% 15% 10%;
+    div {
+        border: 8px solid beige;
+        padding: 1%;
     } 
+    .wrapper1 {
+        border: none;
+        padding: 0.25% 1%;
+    }
+    .level2 {
+        background-color: aqua;
+        padding: 2%;
+    }
 
+    .level3 {
+        background-color: teal;
+        padding: 1%;
+    }
+
+    .level4 {
+        background-color: aqua;
+        padding: 2%;
+        margin: 3%;
+    }
+
+    p {
+        font-weight: bold;
+        padding: 3%;
+    }
 
 
 </style>
@@ -36,22 +59,44 @@
 <body>
     <h1> FlexBox Challenge 1</h1>
 
-    <main>
+ <main>
     
-    <div class="container">
+    <div>
 
-        <section>
-            <p>Level One</p>
-        </section>
+        <div class="wrapper1">
+            <section>
+                <p>Level One</p>
+            </section>
 
-        <section>
-            <p>Level Two</p>
-        </section>
+            <section class="level2">
+                <p>Level Two</p>
 
-        <section>
-            <p>Level Three</p>
-        </section>
-    
+                    <section class="level3">
+                    <p>Level Three</p>
+                    </section>
+
+            </section>
+        </div>
+
+         <div class="wrapper1">
+            <section class="level2">
+                <p>Level Two</p>
+
+                <section class="level3">
+                    <p>Level Three</p>
+
+                    <section class="level4">
+                        <p>Level Four</p>
+                    </section>
+
+                    <section class="level4">
+                        <p>Level Four</p>
+                    </section>
+
+                </section>
+
+            </section>
+
     </div>
 
 </main>
