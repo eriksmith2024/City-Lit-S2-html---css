@@ -48,6 +48,12 @@
             color: antiquewhite;
             width: 50%;
          }
+        #wrapper1 {
+            display: flex;
+            flex-direction: column;
+           
+        }
+
 
         .level2a {
             background-color: darksalmon;
@@ -56,6 +62,7 @@
             font-weight: bolder;
             font-size: x-large;
             color: yellow;
+            order:1;
         }
 
            .level2b {
@@ -68,10 +75,34 @@
             width: 60%;
         }
 
-            #wrapper {
-                display: flex;
-            }
 
+         #wrapper2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+          .level3a {
+            background-color: darksalmon;
+            margin: 2% 1%;
+            padding: 5% 5%;
+            font-weight: bolder;
+            font-size: x-large;
+            color: yellow;
+            order:1;
+        }
+
+           .level3b {
+            background-color: blue;
+            margin: 2% 1%;
+            padding: 5% 1%;
+            font-weight: bolder;
+            font-size: x-large;
+            color: yellow;
+            width: 60%;
+        }
+
+           
 
     </style>
 </head>
@@ -89,10 +120,20 @@
                 <section id="level1b"> 
                     <p>First Level</p>
                     
-                    <div id="wrapper">
+                    <div id="wrapper1">
                     <section class="level2a"> <p>Second Level</p></section>
 
                     <section class="level2b"> <p>Second Level</p></section>
+                    </div>
+
+    
+
+                     <p>Third Level</p>
+                    
+                    <div id="wrapper2">
+                    <section class="level3a"> <p>Third Level</p></section>
+
+                    <section class="level3b"> <p>Third Level</p></section>
                     </div>
 
                 </section>
