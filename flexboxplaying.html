@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Smith Challenge week 2 exercise 2</title>
+
+    <style>
+    
+        main {
+            position:fixed;
+            top: 40px;
+            left: 30%;
+            background-color: lime;
+            width: 40vw;
+            margin: auto;
+            padding: 0.25%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #wrapper {
+            display: flex;
+        }
+
+
+        #level1a {
+            background-color: darkolivegreen;
+            margin: 1%;
+            padding: 5% 2%;
+            font-weight: bolder;
+            font-size: x-large;
+            text-indent: 1%;
+            color: antiquewhite;
+            width:30%;
+         
+        }
+
+         #level1b {
+            background-color: red;
+            margin: 1%;
+            padding: 5% 2%;
+            font-weight: bolder;
+            font-size: x-large;
+            text-indent: 1%;
+            color: antiquewhite;
+            width: 50%;
+         }
+
+        .level2a {
+            background-color: darksalmon;
+            margin: 2% 1%;
+            padding: 5% 5%;
+            font-weight: bolder;
+            font-size: x-large;
+            color: yellow;
+        }
+
+           .level2b {
+            background-color: blue;
+            margin: 2% 1%;
+            padding: 5% 1%;
+            font-weight: bolder;
+            font-size: x-large;
+            color: yellow;
+            width: 60%;
+        }
+
+            #wrapper {
+                display: flex;
+            }
+
+
+    </style>
+</head>
+<body>
+        
+
+        <main>
+            <h1>Multi Level Nesting</h1>
+
+            <div id="wrapper">
+                <section id="level1a"> 
+                    <p> First Level</p>
+                </section>
+
+                <section id="level1b"> 
+                    <p>First Level</p>
+                    
+                    <div id="wrapper">
+                    <section class="level2a"> <p>Second Level</p></section>
+
+                    <section class="level2b"> <p>Second Level</p></section>
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+
+
+
+</body>
+
+</html>
