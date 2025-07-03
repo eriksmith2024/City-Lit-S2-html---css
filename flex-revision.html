@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Revision</title>
+<style>
+
+div {
+    background-color: skyblue;
+    padding: 8px;
+    margin: 0 0 12px 0;
+}
+
+.container {
+    display:flex;
+}
+
+.item {
+    background-color: coral;
+    margin: 0 4px;
+}
+
+.child {
+    background-color: gold;
+    flex-basis: 50%;
+    margin: 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+    <h1> Flex Box Revision</h1>
+
+    <h2> What is the flexible box model?</h2>
+
+    <p> It is a render or display mode for the 
+        browser that gives us more options for 
+        the flow of elements</p>
+
+    <p> Under the normal flow elements stack 
+        vertically in the same order as they 
+        appear in code</p>
+
+    <div>Item One</div>
+    <div>Item Two</div>
+
+    <p> To use flex box mode we would need to 
+        put the items we want to flex into a 
+        container</p>
+
+    <div class="container"> <!--This makes the two items that follow display as flex horizontally - see container css-->
+       <div class="item">First item</div>   <!--Change the display property to flex for the parent elementof where you want the flexbox effect -->
+        <div class="item">Second item</div>
+    </div>
+    
+    <p> When we set the container element to 
+        display flex any items within will move 
+        to a horizontal layout</p>
+
+    <p> When items are in flex mode, they no 
+        longer inherit the width from their 
+        parent container but instead take the 
+        width to fit from their content</p>
+
+ <div class="container">
+       <div class="child">First item</div>   <!--Change the display property to flex for the parent elementof where you want the flexbox effect -->
+        <div class="child">Second item is longer</div>
+    </div>
+
+    
+
+</body>
+</html>
