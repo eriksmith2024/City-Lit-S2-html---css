@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Lit Forms</title>
+</head>
+<body>
+
+    <h1>Forms in HTML</h1>
+
+    <p>HTML is used to create the front end elements of a form. 
+        In other words the boxes we enter data into and the labels 
+        for them.</p>
+
+        <p> To make the forn functional we will also need some kind 
+            of backend processing using PHP or MYSQL</p>
+
+    <h2> Example Form </h2>
+
+    <form id="contact" method="post" action="">
+        <p>
+            <label for="fname"> Name:
+                <input id="fname" name="fname" type="text" required>
+            </label>
+        </p>
+        <p>
+            <label> Email
+                <input id="email" name="email" type="email"> 
+            </label>
+        </p>
+        <p>
+        <label>Choose a date
+            <input type="date">
+        </label>
+
+        </p>
+
+        <p>
+            <input type="submit" value="send">
+        </p>
+
+        
+    </form>
+    
+</body>
+</html>

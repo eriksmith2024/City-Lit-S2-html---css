@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erik Smith Restaurant City Lit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1, h5 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background-image: url('restaurant.webp');
+      min-height: 100%; /* Keep this for the hero section background */
+      background-position: center;
+      background-size: cover;
+      position: relative; /* Essential for absolute positioning of children */
+    }
+
+    #logo {
+      color: white;
+      background-color: rgba(218, 165, 32, 0.5); /* goldenrod with 50% opacity */
+      border-radius: 15px;
+      text-align: center;
+      font-size: xx-large;
+      padding: 5px;
+      border: 3px white solid;
+      /* New styles to make it stretch full width and centered vertically */
+      width: 100%;
+      box-sizing: border-box; /* Include padding and border in the 100% width */
+      position: absolute; /* Position it relative to .bgimg */
+      top: 50%; /* Start at 50% from the top */
+      left: 0; /* Align to the left edge */
+      transform: translateY(-50%); /* Adjust up by half its height to truly center */
+      margin: 0; /* Remove default paragraph margin */
+      padding-left: 20px; /* Add some horizontal padding to avoid text touching edges */
+      padding-right: 20px;
+    }
+
+    .gold-button {
+      background-color: goldenrod;
+      color: white;
+      border-radius: 15px;
+      border: white solid 3px;
+    }
+
+    .gold-button:hover {
+      background-color: darkgoldenrod;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto; /* Centers the container horizontally */
+      width: 100%; /* Make the container full width */
+    }
+
+    .video-container iframe {
+      width: 100%; /* Make the YouTube video fill its container (100% of viewport width) */
+      height: auto; /* Ensures aspect ratio is maintained */
+      max-width: 1200px; /* Optional: Prevents it from becoming excessively wide on very large screens */
+    }
+
+    /* Styles for the music section (SoundCloud) */
+    .music-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 900px; /* Limits the max width of the music player wrapper */
+      margin: 0 auto 40px; /* Center the wrapper and add bottom margin */
+    }
+
+    .overlay-heading {
+      position: absolute;
+      top: 20px; /* Adjust vertical position over the player */
+      left: 50%;
+      transform: translateX(-50%); /* Centers the heading horizontally */
+      background-color: rgba(218, 165, 32, 0.9); /* goldenrod with slight transparency */
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      z-index: 2; /* Ensures the heading is above the iframe */
+      width: fit-content; /* Adjust width of the heading */
+      box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .music-player {
+      width: 100%;
+      height: 100px; /* Approximately 33% of original 300px height */
+      display: block; /* Ensures it takes up full width */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <p id="logo">Eriks' <br> Sevillian Restaurant </p>
+
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button gold-button">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button gold-button">contact</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
+    <p class="w3-large">Lime Street Liverpool</p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/vNBuXsTY15E?si=1neUpH4qtu9xvWdw"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+</div>
+
+<div class="music-wrapper">
+ <h2 class="overlay-heading">Wine & Dine To Our Spanish Guitarist </h2>
+
+    <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Tahoma,sans-serif; font-weight: 100; text-align: center;">
+      <a href="https://soundcloud.com/flamencoworldmusic" target="_blank" style="color: #cccccc; text-decoration: none;">Flamenco World Music</a>
+      <a href="https://soundcloud.com/flamencoworldmusic/sets/flamenco-chill-flamenco-guitar" title="Flamenco Chill - Flamenco Guitar and Flamenco Music, Spanish Guitar, Background Music and Chill Out Lounge Music for Relaxation"
+        target="_blank" style="color: #cccccc; text-decoration: none;">Flamenco Chill - Flamenco Guitar and Flamenco Music, Spanish Guitar, Background Music and Chill Out Lounge Music for Relaxation</a>
+    </div>
+</div>
+
+
+ 
+
+
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Tapas Menu</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Jamón Ibérico Croquetas <b>€4.50</b></h5>
+      <h5>Tomato & Basil Bruschetta <b>€3.80</b></h5>
+      <h5>Garlic Prawns (Gambas al Ajillo) <b>€6.00</b></h5>
+      <h5>Patatas Bravas <b>€4.00</b></h5>
+      <h5>Manchego Cheese with Membrillo <b>€5.00</b></h5>
+      <h5>Chorizo in Red Wine <b>€5.50</b></h5>
+      <h5>Grilled Padron Peppers <b>€3.50</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Dishes</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Traditional Seafood Paella <b>€12.00</b></h5>
+      <h5>Traditional Meat Paella <b>€12.00</b></h5>
+      <h5>Vegetarian Paella with Seasonal Veg <b>€10.00</b></h5>
+      <h5>Slow-Cooked Oxtail (Rabo de Toro) <b>€14.00</b></h5>
+      <h5>Grilled Iberian Pork Pluma with Mojo Verde <b>€13.50</b></h5>
+      <h5>Stuffed Peppers with Cod & Spinach <b>€11.00</b></h5>
+      <h5>Roast Chicken with Paprika & Lemon <b>€11.50</b></h5>
+      <h5>Andalusian Lamb Stew (Cordero Guisado) <b>€13.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Churros with Hot Chocolate <b>€4.00</b></h5>
+      <h5>Crema Catalana <b>€4.50</b></h5>
+      <h5>Orange & Almond Cake <b>€3.80</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Drinks</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Sangria <b>€6.00</b></h5>
+      <h5>White Wine <b>€4.50</b></h5>
+      <h5>Red Wine <b>€3.80</b></h5>
+      <h5>Rose <b>€3.80</b></h5>
+      <h5>Beer <b>€3.80</b></h5>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-07-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message / Special requirements" required name="Message"></p>
+        <p><button class="w3-button gold-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

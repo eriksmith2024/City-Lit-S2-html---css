@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erik Smith Restaurant City Lit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1, h5 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background-image: url('restaurant.webp');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #logo {
+      color: white;
+      background-color: rgba(218, 165, 32, 0.7); /* goldenrod with 70% opacity */
+      border-radius: 15px;
+      text-align: center;
+      font-size: xx-large;
+      padding: 5px;
+      border: 3px white solid;
+    }
+
+    .gold-button {
+      background-color: goldenrod;
+      color: white;
+      border-radius: 15px;
+      border: white solid 3px;
+    }
+
+    .gold-button:hover {
+      background-color: darkgoldenrod;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
+      width: 100%; /* Make video container full width */
+    }
+
+    .video-container iframe {
+      width: 100%; /* Make the iframe fill the container's width */
+      height: 60vw; /* Maintain aspect ratio, adjust as needed */
+      max-height: 500px; /* Set a max-height to prevent it from becoming too tall */
+    }
+
+    .full-width-heading {
+      color: white;
+      background-color: rgba(218, 165, 32, 0.7); /* goldenrod with 70% opacity */
+      border-radius: 15px;
+      text-align: center;
+      font-size: xx-large;
+      padding: 5px;
+      border: 3px white solid;
+      margin: 20px auto; /* Add margin for spacing */
+      width: 90%; /* Adjust width as needed, can be 100% too */
+      max-width: 800px; /* Optional: limit max width for very large screens */
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+  </style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p id="logo">Eriks' <br> Sevillian Restaurant </p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button gold-button">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button gold-button">contact</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
+    <p class="w3-large">Lime Street Liverpool</p>
+  </div>
+</div>
+
+
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Tapas Menu</h1>
+    </div>
+
+    <div class="w3-container">
+      <h5>Jamón Ibérico Croquetas <b>€4.50</b></h5>
+      <h5>Tomato & Basil Bruschetta <b>€3.80</b></h5>
+      <h5>Garlic Prawns (Gambas al Ajillo) <b>€6.00</b></h5>
+      <h5>Patatas Bravas <b>€4.00</b></h5>
+      <h5>Manchego Cheese with Membrillo <b>€5.00</b></h5>
+      <h5>Chorizo in Red Wine <b>€5.50</b></h5>
+      <h5>Grilled Padron Peppers <b>€3.50</b></h5>
+    </div>
+
+    <div class="w3-container w3-black">
+      <h1>Main Dishes</h1>
+    </div>
+
+    <div class="w3-container">
+      <h5>Traditional Seafood Paella <b>€12.00</b></h5>
+      <h5>Traditional Meat Paella <b>€12.00</b></h5>
+      <h5>Vegetarian Paella with Seasonal Veg <b>€10.00</b></h5>
+      <h5>Slow-Cooked Oxtail (Rabo de Toro) <b>€14.00</b></h5>
+      <h5>Grilled Iberian Pork Pluma with Mojo Verde <b>€13.50</b></h5>
+      <h5>Stuffed Peppers with Cod & Spinach <b>€11.00</b></h5>
+      <h5>Roast Chicken with Paprika & Lemon <b>€11.50</b></h5>
+      <h5>Andalusian Lamb Stew (Cordero Guisado) <b>€13.00</b></h5>
+    </div>
+
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+
+    <div class="w3-container">
+      <h5>Churros with Hot Chocolate <b>€4.00</b></h5>
+      <h5>Crema Catalana <b>€4.50</b></h5>
+      <h5>Orange & Almond Cake <b>€3.80</b></h5>
+    </div>
+
+     <div class="w3-container w3-black">
+      <h1>Drinks</h1>
+    </div>
+
+    <div class="w3-container">
+      <h5>Sangria <b>€6.00</b></h5>
+      <h5>White Whine <b>€4.50</b></h5>
+      <h5>Red Wine <b>€3.80</b></h5>
+      <h5>Rose <b>€3.80</b></h5>
+      <h5>Beer <b>€3.80</b></h5>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-07-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message / Special requirements" required name="Message"></p>
+        <p><button class="w3-button gold-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vNBuXsTY15E?si=1neUpH4qtu9xvWdw" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
